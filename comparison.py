@@ -7,6 +7,10 @@ are evenly mixed. For regression, impurity instead reflects how spread out
 the numeric values are, so lower variance means lower impurity. Since this
 task is binary classification, I used entropy as the impurity measure,
 given by H = -sum(p_k log2(p_k)), where p_k is the proportion of each class.
+
+Fit finds the best split for the data then recursively builds the bianry tree
+of splits.
+
 I chose entropy because I previously studied information theory and was
 interested in seeing it used here to measure uncertainty in the data.
 """
